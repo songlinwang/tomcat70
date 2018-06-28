@@ -674,6 +674,7 @@ public class Catalina {
 
     /**
      * Start a new server instance.
+     * 启动一个新Server事例的功能
      */
     public void start() {
 
@@ -686,7 +687,7 @@ public class Catalina {
             return;
         }
 
-        long t1 = System.nanoTime();
+        long t1 = System.nanoTime(); // 纳秒--比System.currentTimeMillis()更精确，但是只能做计时器。System.currentTimeMillis()是和1970-1-1间隔的毫秒数，可以转化成日期
 
         // Start the new server
         try {
