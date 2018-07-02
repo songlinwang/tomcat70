@@ -144,6 +144,9 @@ import org.apache.tomcat.util.scan.StandardJarScanner;
 public class StandardContext extends ContainerBase
         implements Context, NotificationEmitter {
 
+    /**
+     * 这个类是重中之重，解析web.xml以及部署webapp都在这实现。
+     */
     private static final Log log = LogFactory.getLog(StandardContext.class);
 
 

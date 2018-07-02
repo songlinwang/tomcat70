@@ -1096,6 +1096,9 @@ public abstract class ContainerBase extends LifecycleMBeanBase
             ((Lifecycle) loader).start();
         logger = null;
         getLogger();
+        /**
+         * manager cluster realm resourcesd都会启动
+         */
         if ((manager != null) && (manager instanceof Lifecycle))
             ((Lifecycle) manager).start();
         if ((cluster != null) && (cluster instanceof Lifecycle))
@@ -1107,6 +1110,10 @@ public abstract class ContainerBase extends LifecycleMBeanBase
             ((Lifecycle) resources).start();
 
         // Start our child containers, if any
+        /**
+         * 返回所有的StandardHost  默认值有一个。为每一个host启动线程
+         * StartChild实现Callable接口。将子容器作为一个task，并在callbale接口中实现start方法。最后交给ThreadPoolExecutor提交task
+         */
         Container children[] = findChildren();
         List<Future<Void>> results = new ArrayList<Future<Void>>();
         for (int i = 0; i < children.length; i++) {
@@ -1114,6 +1121,9 @@ public abstract class ContainerBase extends LifecycleMBeanBase
         }
 
         boolean fail = false;
+        /**
+         * Connector依赖connector，所以要等所有的线程都执行完毕。
+         */
         for (Future<Void> result : results) {
             try {
                 result.get();
@@ -1132,10 +1142,11 @@ public abstract class ContainerBase extends LifecycleMBeanBase
         if (pipeline instanceof Lifecycle)
             ((Lifecycle) pipeline).start();
 
-
+        //通知所有监听了StanderEngine的Listener
         setState(LifecycleState.STARTING);
 
         // Start our thread
+        //启动一个后台线程，定期的检查session过期情况
         threadStart();
 
     }

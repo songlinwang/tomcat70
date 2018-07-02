@@ -430,6 +430,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
      *
      * @exception LifecycleException if this component detects a fatal error
      *  that prevents this component from being used
+     *  1. 启动container 2. 启动executor 3.启动connector -- 注意顺序
      */
     @Override
     protected void startInternal() throws LifecycleException {
@@ -457,7 +458,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
                 try {
                     // If it has already failed, don't try and start it
                     if (connector.getState() != LifecycleState.FAILED) {
-                        connector.start();
+                        connector.start();  // 调用初始化Container和 Connector 具体的看源码ContainerBase
                     }
                 } catch (Exception e) {
                     log.error(sm.getString(

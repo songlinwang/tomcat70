@@ -295,6 +295,7 @@ public class Catalina {
 
     /**
      * Create and configure the Digester we will be using for startup.
+     * 用来生成server.xml的操作，Digester就是一个xml解析器，构造tomcat启动时的各种参数，初始化server、connector、listener、executor等数据
      */
     protected Digester createStartDigester() {
         long t1=System.currentTimeMillis();
@@ -739,6 +740,9 @@ public class Catalina {
         try {
             // Remove the ShutdownHook first so that server.stop()
             // doesn't get invoked twice
+            /**
+             * 首先去除注册的钩子，否则程序结束后再次触发钩子的定义的事件，肯定会出错
+             */
             if (useShutdownHook) {
                 Runtime.getRuntime().removeShutdownHook(shutdownHook);
 

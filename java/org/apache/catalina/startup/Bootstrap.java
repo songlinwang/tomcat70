@@ -208,6 +208,9 @@ public final class Bootstrap {
         setCatalinaHome(); //（安装目录） 指向公用信息的位置，就是bin和lib
         setCatalinaBase(); //  (工作目录) 指向每个Tomcat私有信息的位置
 
+        /**
+         * 引导Catalina，构造一个classloader来加载Catalina的内部类（所有在catalina.home中的jar文件）
+         */
         initClassLoaders();
 
         Thread.currentThread().setContextClassLoader(catalinaLoader);
