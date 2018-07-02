@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73d5179e-578f-4ca2-a4cc-dfdb086b29c8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$ContainerBackgroundProcessor.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$ContainerBackgroundProcessor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$StartChild.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$StartChild.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$StartStopThreadFactory.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$StartStopThreadFactory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$StopChild.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase$StopChild.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext$ContextFilterMaps.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext$ContextFilterMaps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext$NoPluggabilityServletContext.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext$NoPluggabilityServletContext.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardService.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Bootstrap.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Bootstrap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Catalina$CatalinaShutdownHook.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Catalina$CatalinaShutdownHook.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Catalina.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Catalina.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/CatalinaProperties.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/CatalinaProperties.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/SetParentClassLoaderRule.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/SetParentClassLoaderRule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/util/LifecycleBase.class" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/util/LifecycleBase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/core/StandardServer.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/core/StandardServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/security/SecurityClassLoad.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/security/SecurityClassLoad.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase.java" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/ContainerBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext.java" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardContext.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardService.java" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/core/StandardService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Bootstrap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Catalina.java" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/Catalina.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/CatalinaProperties.java" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/startup/CatalinaProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/apache/catalina/util/LifecycleBase.java" afterPath="$PROJECT_DIR$/target/classes/org/apache/catalina/util/LifecycleBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/util/TestCookieFilter.java" afterPath="$PROJECT_DIR$/target/test-classes/util/TestCookieFilter.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +39,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Bootstrap.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Bootstrap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="401" column="45" lean-forward="false" selection-start-line="401" selection-start-column="40" selection-end-line="401" selection-end-column="45" />
+            <state relative-caret-position="537">
+              <caret line="232" column="15" lean-forward="false" selection-start-line="232" selection-start-column="15" selection-end-line="232" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityClassLoad.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/security/SecurityClassLoad.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassLoaderFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/ClassLoaderFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="248" column="35" lean-forward="true" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -46,31 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Catalina.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Catalina.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="989">
-              <caret line="731" column="25" lean-forward="false" selection-start-line="731" selection-start-column="25" selection-end-line="731" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/connector/Connector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="1006" column="31" lean-forward="false" selection-start-line="1006" selection-start-column="31" selection-end-line="1006" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProtocolHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/ProtocolHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
+            <state relative-caret-position="797">
+              <caret line="705" column="36" lean-forward="true" selection-start-line="705" selection-start-column="36" selection-end-line="705" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -106,19 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Http11Protocol.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/Http11Protocol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
-              <folding>
-                <element signature="e#1979#1980#0" expanded="true" />
-                <element signature="e#2010#2011#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -137,6 +147,7 @@
       <find>initInternal</find>
       <find>Http11Protocol</find>
       <find>start</find>
+      <find>initClassLoaders</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,7 +162,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/util/TestCookieFilter.java" />
-        <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/CatalinaProperties.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleBase.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/core/ContainerBase.java" />
@@ -159,6 +169,8 @@
         <option value="$PROJECT_DIR$/java/org/apache/catalina/core/StandardContext.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/core/StandardServer.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/security/SecurityClassLoad.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" />
       </list>
     </option>
   </component>
@@ -345,7 +357,7 @@
       <workItem from="1529911052219" duration="1321000" />
       <workItem from="1530174665815" duration="31458000" />
       <workItem from="1530346923257" duration="5265000" />
-      <workItem from="1530495555219" duration="14259000" />
+      <workItem from="1530495555219" duration="17601000" />
     </task>
     <task id="LOCAL-00001" summary="注释掉testCookieFilter">
       <created>1529057693400</created>
@@ -375,11 +387,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530501855949</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="注释">
+      <created>1530520058167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530520058167</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57280000" />
+    <option name="totallyTimeSpent" value="60622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -407,7 +426,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29565218" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14347826" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -431,7 +450,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java</url>
-          <line>207</line>
+          <line>221</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -441,42 +460,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/http/RequestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7296">
-          <caret line="333" column="20" lean-forward="false" selection-start-line="333" selection-start-column="20" selection-end-line="333" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/util/TestCookieFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
-          <caret line="74" column="33" lean-forward="true" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/util/TestCookieFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -817,14 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="401" column="45" lean-forward="false" selection-start-line="401" selection-start-column="40" selection-end-line="401" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -835,8 +810,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="731" column="25" lean-forward="false" selection-start-line="731" selection-start-column="25" selection-end-line="731" selection-end-column="25" />
+        <state relative-caret-position="797">
+          <caret line="705" column="36" lean-forward="true" selection-start-line="705" selection-start-column="36" selection-end-line="705" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/StringTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="223" column="7" lean-forward="true" selection-start-line="223" selection-start-column="7" selection-end-line="223" selection-end-column="7" />
+          <folding>
+            <element signature="e#7376#7377#0" expanded="true" />
+            <element signature="e#7415#7416#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/misc/URLClassPath.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="98" column="11" lean-forward="false" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
+          <folding>
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3460#3461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/net/URLClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="147" column="46" lean-forward="true" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/ClassLoaderFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="248" column="35" lean-forward="true" selection-start-line="248" selection-start-column="35" selection-end-line="248" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/security/SecurityClassLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="30" column="23" lean-forward="false" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="232" column="15" lean-forward="false" selection-start-line="232" selection-start-column="15" selection-end-line="232" selection-end-column="15" />
           <folding />
         </state>
       </provider>

@@ -74,6 +74,20 @@ public final class Bootstrap {
 
     // -------------------------------------------------------- Private Methods
 
+    /**
+     *   Tomcat 加载体系
+     *               ClassLoader
+     *                    ^
+     *                    |
+     *                    |
+     *               CommonLoader
+     *
+     *      CatalinaLoader        SharedLoader
+     *
+     *
+     *                    WebappClassLoader  WebappClassLoader
+      */
+
 
     private void initClassLoaders() {
         try {
@@ -210,11 +224,13 @@ public final class Bootstrap {
 
         /**
          * 引导Catalina，构造一个classloader来加载Catalina的内部类（所有在catalina.home中的jar文件）
+         * 初始化 CommonLoader CatalinaLoader 和 SharedLoader
          */
         initClassLoaders();
 
         Thread.currentThread().setContextClassLoader(catalinaLoader);
 
+        //加载各种类
         SecurityClassLoad.securityClassLoad(catalinaLoader);
 
         // Load our startup class and call its process() method

@@ -161,6 +161,9 @@ public class CatalinaProperties {
      * Get the value of the catalina.home environment variable.
      */
     private static String getCatalinaHome() {
+        /**
+         * getProperty(key,dif),key存在时得到key对应的系统文件，不存在时得到dif对应的
+         */
         return System.getProperty(Globals.CATALINA_HOME_PROP,
                                   System.getProperty("user.dir"));
     }

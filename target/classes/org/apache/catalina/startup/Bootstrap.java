@@ -192,10 +192,25 @@ public final class Bootstrap {
         throws Exception
     {
 
+        /**
+         * 同一个版本下的Tomcat，目录有bin conf lib logs temp（临时目录） webapps（自动装载的应用程序目录） work（JVM临时文件目录）
+         * 其中只有 bin 和 conf目录被多个tomcat公用，其余的每个tomcat必须有自己的备份
+         * Catalina就是Tomcat服务器使用的Apache实现的Servlet容器的名字
+         *
+         * Tomcat核心分为三部分：
+         *   （1） Web容器 -- 处理静态页面
+         *   （2） Catalina -- 一个servlet容器，负责处理请求
+         *   （3） Jsp容器，将jsp页面翻译成一般的Servlet
+         *
+         * ? CatalinaHome用来实例化，CatalinaBase用处是啥 ?
+         */
         // Set Catalina path
-        setCatalinaHome();
-        setCatalinaBase();
+        setCatalinaHome(); //（安装目录） 指向公用信息的位置，就是bin和lib
+        setCatalinaBase(); //  (工作目录) 指向每个Tomcat私有信息的位置
 
+        /**
+         * 引导Catalina，构造一个classloader来加载Catalina的内部类（所有在catalina.home中的jar文件）
+         */
         initClassLoaders();
 
         Thread.currentThread().setContextClassLoader(catalinaLoader);

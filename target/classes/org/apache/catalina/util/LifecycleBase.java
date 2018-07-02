@@ -389,6 +389,7 @@ public abstract class LifecycleBase implements Lifecycle {
         }
         
         this.state = state;
+        // 通知所有监听了StanderEngine的Listener
         String lifecycleEvent = state.getLifecycleEvent();
         if (lifecycleEvent != null) {
             fireLifecycleEvent(lifecycleEvent, data);
