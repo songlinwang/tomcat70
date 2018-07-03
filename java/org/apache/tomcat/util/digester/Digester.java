@@ -1232,6 +1232,9 @@ public class Digester extends DefaultHandler2 {
      * @param list The attributes attached to the element. If there are
      *   no attributes, it shall be an empty Attributes object. 
      * @exception SAXException if a parsing error is to be reported
+     * XMLReader 解析时会回调Digester，进而调用startElement方法
+     * Attributes list 即为Server元素的属性，如port和shutdown等。qName为Server（只是以server为例）
+     * 当然，遇到server结束标签时，依次调用endElement方法，最终将server.xml文件中设置的元素和属性值构造出tomcat容器，如server，service，connector
      */
     @Override
     public void startElement(String namespaceURI, String localName,
@@ -1270,6 +1273,11 @@ public class Digester extends DefaultHandler2 {
         }
 
         // Fire "begin" events for all relevant rules
+        /**
+         * 根据namespaceURI 获取相关Rule。而后调用begin方法。
+         * ObjectCreateRule 的begin方法就是创建Server、Service以及Connector实例
+         * SetPropertiesRule的begin方法首先将压入栈的Server实例出栈，然后给Server实例设置各个属性值，如port以及shutDown
+         */
         List<Rule> rules = getRules().match(namespaceURI, match);
         matches.push(rules);
         if ((rules != null) && (rules.size() > 0)) {

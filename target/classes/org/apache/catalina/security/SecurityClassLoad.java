@@ -35,7 +35,7 @@ public final class SecurityClassLoad {
             return;
         }
 
-        loadCorePackage(loader);
+        loadCorePackage(loader); //tomat 核心class
         loadCoyotePackage(loader);
         loadLoaderPackage(loader);
         loadRealmPackage(loader);
@@ -44,7 +44,7 @@ public final class SecurityClassLoad {
         loadUtilPackage(loader);
         loadValvesPackage(loader);
         loadJavaxPackage(loader);
-        loadConnectorPackage(loader);
+        loadConnectorPackage(loader);//tomcat处理请求的class
         loadTomcatPackage(loader);
     }
 

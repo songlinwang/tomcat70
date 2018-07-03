@@ -49,6 +49,7 @@ public abstract class LifecycleMBeanBase extends LifecycleBase
      * Sub-classes wishing to perform additional initialization should override
      * this method, ensuring that super.initInternal() is the first call in the
      * overriding method.
+     * 获得DynamicMBean，
      */
     @Override
     protected void initInternal() throws LifecycleException {
@@ -57,7 +58,7 @@ public abstract class LifecycleMBeanBase extends LifecycleBase
         // preRegister().
         if (oname == null) {
             mserver = Registry.getRegistry(null, null).getMBeanServer();
-            
+            //将容器注册到JMX
             oname = register(this, getObjectNameKeyProperties());
         }
     }
@@ -146,6 +147,7 @@ public abstract class LifecycleMBeanBase extends LifecycleBase
             String objectNameKeyProperties) {
         
         // Construct an object name with the right domain
+        //获得容器的名字，以StandardServer为例，最终得到Catalina:type=Server
         StringBuilder name = new StringBuilder(getDomain());
         name.append(':');
         name.append(objectNameKeyProperties);

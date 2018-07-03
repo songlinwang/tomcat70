@@ -725,8 +725,11 @@ public class Catalina {
             }
         }
 
+        /**
+         * BootStrap中，if (command.equals("start")) daemon.setAwait(true)
+         */
         if (await) {
-            await();
+            await(); // 一直等待接收到一个正确的关闭命令后该方法返回。这样主线程会一直存活，监听Http连接的线程池是守护线程
             stop();
         }
     }

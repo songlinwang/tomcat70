@@ -742,6 +742,10 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
      *
      * @exception LifecycleException if this component detects a fatal error
      *  that prevents this component from being used
+     *
+     *  1. 产生 CONFIGURE_START_EVENT 事件
+     *  2. 将容器状态转化成LifecycleState.STARTING 状态
+     *  3. 通过service调用子容器的start方法
      */
     @Override
     protected void startInternal() throws LifecycleException {
@@ -749,6 +753,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
         fireLifecycleEvent(CONFIGURE_START_EVENT, null);
         setState(LifecycleState.STARTING);
 
+        // Tomcat中有配置，记得看项目中的server.xml的配置
         globalNamingResources.start();
         
         // Start our defined Services
@@ -796,11 +801,13 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
         // Note although the cache is global, if there are multiple Servers
         // present in the JVM (may happen when embedding) then the same cache
         // will be registered under multiple names
+        // StringCache容器在JMX内注册的容器为Catalina:type=StringCache
         onameStringCache = register(new StringCache(), "type=StringCache");
 
         // Register the MBeanFactory
         MBeanFactory factory = new MBeanFactory();
         factory.setContainer(this);
+        // MBeanFactory容器在JMX内注册的容器为Catalina:type=MBeanFactory
         onameMBeanFactory = register(factory, "type=MBeanFactory");
         
         // Register the naming resources
@@ -835,6 +842,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
             }
         }
         // Initialize our defined Services
+        // 对子容器Service进行初始化，默认是StandardService
         for (int i = 0; i < services.length; i++) {
             services[i].init();
         }

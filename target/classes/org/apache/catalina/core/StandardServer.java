@@ -415,6 +415,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
      * Wait until a proper shutdown command is received, then return.
      * This keeps the main thread alive - the thread pool listening for http 
      * connections is daemon threads.
+     * 上面的翻译：一直等待接收到一个正确的关闭命令后该方法返回。这样主线程会一直存活，监听Http连接的线程池是守护线程
      */
     @Override
     public void await() {
