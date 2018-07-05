@@ -385,7 +385,13 @@ public class JIoEndpoint extends AbstractEndpoint<Socket> {
             setMaxConnections(getMaxThreadsExecutor(true));
         }
 
+        /**
+         *
+         */
         if (serverSocketFactory == null) {
+            /**
+             * 如果Connector配置时，有SSLEnable=true，那么将会创建ServerSocketFactory。如果没有配置 new一个
+             */
             if (isSSLEnabled()) {
                 serverSocketFactory =
                     handler.getSslImplementation().getServerSocketFactory(this);

@@ -1277,6 +1277,7 @@ public class Digester extends DefaultHandler2 {
          * 根据namespaceURI 获取相关Rule。而后调用begin方法。
          * ObjectCreateRule 的begin方法就是创建Server、Service以及Connector实例
          * SetPropertiesRule的begin方法首先将压入栈的Server实例出栈，然后给Server实例设置各个属性值，如port以及shutDown
+         * Connector对应的Rule包括ConnectorCreateRule，里面的begin方法中根据protocol 生成相关的Connector。下一步当然就是start
          */
         List<Rule> rules = getRules().match(namespaceURI, match);
         matches.push(rules);

@@ -537,6 +537,7 @@ public class Catalina {
 
     /**
      * Start a new server instance.
+     * 这就是Bootstrap的load方法
      */
     public void load() {
 
@@ -549,6 +550,7 @@ public class Catalina {
         initNaming();
 
         // Create and execute our Digester
+        //构造各种规则
         Digester digester = createStartDigester();
 
         InputSource inputSource = null;
@@ -614,6 +616,11 @@ public class Catalina {
             try {
                 inputSource.setByteStream(inputStream);
                 digester.push(this);
+                //digester的解析实际上就是xml的解析
+                /**
+                 * digester是采用XMLReader解析xml
+                 * XMLReader解析xml时会生成事件，回调Digester的startElement方法，然后调用begin方法，生成server以及相关参数
+                 */
                 digester.parse(inputSource);
             } catch (SAXParseException spe) {
                 log.warn("Catalina.start using " + getConfigFile() + ": " +
@@ -709,6 +716,9 @@ public class Catalina {
         }
 
         // Register shutdown hook
+        /**
+         * 开启钩子，
+         */
         if (useShutdownHook) {
             if (shutdownHook == null) {
                 shutdownHook = new CatalinaShutdownHook();
@@ -910,6 +920,7 @@ public class Catalina {
     // XXX Should be moved to embedded !
     /**
      * Shutdown hook which will perform a clean shutdown of Catalina if needed.
+     * 关闭钩子，将执行清理操作
      */
     protected class CatalinaShutdownHook extends Thread {
 

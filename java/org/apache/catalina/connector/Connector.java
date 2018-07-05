@@ -65,6 +65,13 @@ public class Connector extends LifecycleMBeanBase  {
     public Connector(String protocol) {
         setProtocol(protocol);
         // Instantiate protocol handler
+        /**
+         * protocolHandlerClassName 默认初始化 org.apache.coyote.http11.Http11Protocol
+         * 因此ProtocolHandler(父类)默认为Http11Protocol(实现类)
+         * jdk7 是采用BIO Http11Protocol jdk8是采用NIO Http11NioProtocol。其实采用那个取决于实现类AbstractProtocol中的
+         * AbstractEndpoint。有三种实现AprEndpoint JioEndpoint NioEndpoint .
+         * 创建ProtocolHandler实现类时，构造函数中就new了一个AbstractEndpoint的实现类。
+         */
         try {
             Class<?> clazz = Class.forName(protocolHandlerClassName);
             this.protocolHandler = (ProtocolHandler) clazz.newInstance();
@@ -959,6 +966,7 @@ public class Connector extends LifecycleMBeanBase  {
         super.initInternal();
 
         // Initialize adapter
+        //adapter是网络协议的真正处理者
         adapter = new CoyoteAdapter(this);
         protocolHandler.setAdapter(adapter);
 

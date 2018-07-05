@@ -647,7 +647,7 @@ public abstract class AbstractEndpoint<S> {
     public final void init() throws Exception {
         testServerCipherSuitesOrderSupport();
         if (bindOnInit) {
-            bind();
+            bind(); //会调用子类比如JIoEndpoint的bind()方法，实现ServerSocketFactory的创建
             bindState = BindState.BOUND_ON_INIT;
         }
     }

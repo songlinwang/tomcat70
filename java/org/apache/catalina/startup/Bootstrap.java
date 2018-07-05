@@ -426,7 +426,7 @@ public final class Bootstrap {
             // Don't set daemon until init() has completed
             Bootstrap bootstrap = new Bootstrap();
             try {
-                bootstrap.init();
+                bootstrap.init(); // 该方法中将的CatalinaDaemon设置为Catalina
             } catch (Throwable t) {
                 handleThrowable(t);
                 t.printStackTrace();
@@ -455,7 +455,18 @@ public final class Bootstrap {
                 daemon.stop();
             } else if (command.equals("start")) {
                 daemon.setAwait(true);
+                //load方法是采用反射调用CatalinaDaemon(Catalina类)的load方法，那为啥不直接调用呢？
+                /**
+                 * 1.采用Digester解析server.xml
+                 * 2.调用LifyCycle的init方法，LifyCycleBase实现了这个方法
+                 * 3.LifyCycleBase调用initInternal，这时会调用子类的Connector或者StandardServer的方法初始化。StandardServer的初始化就是
+                 * 调用StandrdService的init方法，将Host、Engin等容器初始化。顺序应该是Server->Service->Connector
+                 * 4.初始化完成
+                 */
                 daemon.load(args);
+                /**
+                 * 采用反射调用CatalinaDaemon(Catalina类)的start方法
+                 */
                 daemon.start();
             } else if (command.equals("stop")) {
                 daemon.stopServer(args);
