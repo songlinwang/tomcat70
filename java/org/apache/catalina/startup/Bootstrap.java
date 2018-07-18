@@ -466,6 +466,7 @@ public final class Bootstrap {
                 daemon.load(args);
                 /**
                  * 采用反射调用CatalinaDaemon(Catalina类)的start方法
+                 * start方法中await为true会保证一直等待，直到接到stop的命令
                  */
                 daemon.start();
             } else if (command.equals("stop")) {

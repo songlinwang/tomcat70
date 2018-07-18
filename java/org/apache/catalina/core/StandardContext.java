@@ -5528,12 +5528,16 @@ public class StandardContext extends ContainerBase
                     }
                     if ( (getCluster() != null) && distributable) {
                         try {
+                            // 向集群中注册
                             contextManager = getCluster().createManager(getName());
                         } catch (Exception ex) {
                             log.error("standardContext.clusterFail", ex);
                             ok = false;
                         }
                     } else {
+                        // 如果不是集群，new一个新的
+                        // standardManager在tomcat正常关闭时，负责将其序列化到/work/Catalina/host_name/webapp_name/SESSIONS.ser文件中，当
+                        // 重新启动是可以读取并加载到内存中。如果突然关机，则没时间保存，所欲session丢失。
                         contextManager = new StandardManager();
                     }
                 } 

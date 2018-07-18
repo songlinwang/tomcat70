@@ -512,7 +512,13 @@ public abstract class AbstractEndpoint<S> {
     public void createExecutor() {
         internalExecutor = true;
         TaskQueue taskqueue = new TaskQueue();
+        /**
+         * 参数分别对应线程名字、是否守护线程、线程的优先级
+         */
         TaskThreadFactory tf = new TaskThreadFactory(getName() + "-exec-", daemon, getThreadPriority());
+        /**
+         * 参数分别对应核心线程数、最大线程数、非核心线程闲置超时时间、时间单位、线程池队列、线程工厂
+         */
         executor = new ThreadPoolExecutor(getMinSpareThreads(), getMaxThreads(), 60, TimeUnit.SECONDS,taskqueue, tf);
         taskqueue.setParent( (ThreadPoolExecutor) executor);
     }

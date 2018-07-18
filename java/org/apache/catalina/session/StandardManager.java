@@ -158,7 +158,7 @@ public class StandardManager extends ManagerBase {
 
     @Override
     public void load() throws ClassNotFoundException, IOException {
-        if (SecurityUtil.isPackageProtectionEnabled()){
+        if (SecurityUtil.isPackageProtectionEnabled()){  // 如果需要安全机制是打开的并且包保护模式打开，会通过创建PrivilegedDoLoad来加载持久化的session
             try{
                 AccessController.doPrivileged( new PrivilegedDoLoad() );
             } catch (PrivilegedActionException ex){
@@ -193,9 +193,11 @@ public class StandardManager extends ManagerBase {
         }
 
         // Initialize our internal data structures
+        // 原本的session是存在ConcurrentHashMap里面的，当服务器关闭时，需要持久化到本地，现将Map里面的session清掉
         sessions.clear();
 
         // Open an input stream to the specified pathname, if any
+        // 通过new File(directory,filePath)来读取持久化文件
         File file = file();
         if (file == null) {
             return;
@@ -220,6 +222,7 @@ public class StandardManager extends ManagerBase {
             if (classLoader == null) {
                 classLoader = getClass().getClassLoader();
             }
+            // 打开Session持久化文件的输入流，并封装成CunstomObjectInputStream
             ois = new CustomObjectInputStream(bis, classLoader, logger,
                     getSessionAttributeValueClassNamePattern(),
                     getWarnOnSessionAttributeFilterFailure());
@@ -258,6 +261,7 @@ public class StandardManager extends ManagerBase {
                     StandardSession session = getNewSession();
                     session.readObjectData(ois);
                     session.setManager(this);
+                    // 将持久化的session加载到Map中
                     sessions.put(session.getIdInternal(), session);
                     session.activate();
                     if (!session.isValidInternal()) {

@@ -3014,17 +3014,21 @@ public class Request
         if ((session != null) && !session.isValid()) {
             session = null;
         }
+        // 如果request中带有session 则直接返回session
         if (session != null) {
             return (session);
         }
 
         // Return the requested session if it exists and is valid
+        // 获取session管理器 比如StandardManager
         Manager manager = context.getManager();
         if (manager == null) {
             return null;        // Sessions are not supported
         }
         if (requestedSessionId != null) {
             try {
+                // 首先session管理器也就是StandardManager会从Map里取，如果取不到则读取持久化文件进而放到Map里
+                // 所以这里只需要从StandardManager中取就好了
                 session = manager.findSession(requestedSessionId);
             } catch (IOException e) {
                 session = null;
@@ -3091,6 +3095,7 @@ public class Request
         } else {
             sessionId = null;
         }
+        // 到这里其实是没有找到Session，直接创建Session出来
         session = manager.createSession(sessionId);
 
         // Creating a new session cookie based on that session
@@ -3101,7 +3106,7 @@ public class Request
             Cookie cookie =
                 ApplicationSessionCookieConfig.createSessionCookie(
                         context, session.getIdInternal(), isSecure());
-
+            // 将cookie写到response里面
             response.addSessionCookieInternal(cookie);
         }
 

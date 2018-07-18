@@ -143,6 +143,7 @@ public final class Cookies {
         int pos=0;
         while( pos>=0 ) {
             // Cookie2: version ? not needed
+            // 从cookie中轮询查找Header里面那个name是cookie的数据
             pos=headers.findHeader( "Cookie", pos );
             // no more cookie headers headers
             if( pos<0 ) {

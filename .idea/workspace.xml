@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="73d5179e-578f-4ca2-a4cc-dfdb086b29c8" name="Default" comment="">
+    <list default="true" id="73d5179e-578f-4ca2-a4cc-dfdb086b29c8" name="Default" comment="注释">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/connector/Connector.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/connector/Connector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/connector/Request.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/connector/Request.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/connector/CoyoteAdapter.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/connector/CoyoteAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/session/StandardManager.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/session/StandardManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/core/StandardContext.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/core/StandardContext.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/tomcat/util/digester/Digester.java" afterPath="$PROJECT_DIR$/java/org/apache/tomcat/util/digester/Digester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java" afterPath="$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/tomcat/util/net/JIoEndpoint.java" afterPath="$PROJECT_DIR$/java/org/apache/tomcat/util/net/JIoEndpoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java" afterPath="$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/catalina/session/StandardSession.java" afterPath="$PROJECT_DIR$/java/org/apache/catalina/session/StandardSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/org/apache/tomcat/util/http/Cookies.java" afterPath="$PROJECT_DIR$/java/org/apache/tomcat/util/http/Cookies.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,106 +23,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Connector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/connector/Connector.java">
+      <file leaf-file-name="ManagerBase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/session/ManagerBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="1025" column="0" lean-forward="true" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
+            <state relative-caret-position="696">
+              <caret line="694" column="13" lean-forward="false" selection-start-line="694" selection-start-column="13" selection-end-line="694" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProtocolHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/ProtocolHandler.java">
+      <file leaf-file-name="StandardSession.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/session/StandardSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="14160">
+              <caret line="662" column="8" lean-forward="false" selection-start-line="662" selection-start-column="8" selection-end-line="662" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractProtocol.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/AbstractProtocol.java">
+      <file leaf-file-name="Manager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="434" column="24" lean-forward="false" selection-start-line="434" selection-start-column="24" selection-end-line="434" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Http11Protocol.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/Http11Protocol.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="21" />
-              <folding>
-                <element signature="e#3796#3797#0" expanded="true" />
-                <element signature="e#3838#3839#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JIoEndpoint.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/JIoEndpoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="379" column="17" lean-forward="false" selection-start-line="379" selection-start-column="17" selection-end-line="379" selection-end-column="17" />
+            <state relative-caret-position="6984">
+              <caret line="307" column="7" lean-forward="false" selection-start-line="307" selection-start-column="7" selection-end-line="307" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SSLImplementation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/SSLImplementation.java">
+      <file leaf-file-name="StandardContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="40" />
+            <state relative-caret-position="128832">
+              <caret line="5654" column="24" lean-forward="false" selection-start-line="5654" selection-start-column="24" selection-end-line="5654" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultServerSocketFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/DefaultServerSocketFactory.java">
+      <file leaf-file-name="ContainerBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/ContainerBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+            <state relative-caret-position="34080">
+              <caret line="1477" column="20" lean-forward="false" selection-start-line="1477" selection-start-column="20" selection-end-line="1477" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractEndpoint.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java">
+      <file leaf-file-name="LifecycleMBeanBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleMBeanBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="641" column="25" lean-forward="false" selection-start-line="641" selection-start-column="25" selection-end-line="641" selection-end-column="25" />
+            <state relative-caret-position="144">
+              <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerSocketFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/ServerSocketFactory.java">
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-72">
-              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="5664">
+              <caret line="254" column="19" lean-forward="false" selection-start-line="254" selection-start-column="19" selection-end-line="254" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Catalina.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java">
+      <file leaf-file-name="LifecycleBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="649" column="25" lean-forward="false" selection-start-line="649" selection-start-column="24" selection-end-line="649" selection-end-column="28" />
+            <state relative-caret-position="288">
+              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MBeanRegistration.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/management/MBeanRegistration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Container.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Container.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1440">
+              <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -129,27 +127,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>initInternal</find>
-      <find>document</find>
-      <find>SetPropertiesRule</find>
-      <find>startE</find>
-      <find>set</find>
-      <find>load</find>
-      <find>initClassLoaders</find>
-      <find>start()</find>
-      <find>getServer()</find>
-      <find>getS</find>
-      <find>manager</find>
-      <find>children</find>
-      <find>globalNamingResources</find>
-      <find>startInternal</find>
-      <find>Http11NioProtocol</find>
-      <find>getInputBuffer</find>
       <find>socket.acc</find>
       <find>events</find>
       <find>sock</find>
       <find>socket.accept</find>
-      <find>main</find>
       <find>Http11Protocol</find>
       <find>setProtocol</find>
       <find>isSSLEnabled()</find>
@@ -159,6 +140,23 @@
       <find>init</find>
       <find>bind</find>
       <find>endpoint</find>
+      <find>createExecutor</find>
+      <find>setSocketOptions</find>
+      <find>handshake</find>
+      <find>handler.process</find>
+      <find>processSockethandler.process</find>
+      <find>handler</find>
+      <find>createProcessor</find>
+      <find>process</find>
+      <find>startInte</find>
+      <find>getSession</find>
+      <find>load</find>
+      <find>setAwait</find>
+      <find>await</find>
+      <find>main</find>
+      <find>re</find>
+      <find>backGround</find>
+      <find>backGroundProcess</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,18 +173,24 @@
         <option value="$PROJECT_DIR$/test/util/TestCookieFilter.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/CatalinaProperties.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/core/StandardService.java" />
-        <option value="$PROJECT_DIR$/java/org/apache/catalina/core/StandardContext.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/security/SecurityClassLoad.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleBase.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleMBeanBase.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/core/ContainerBase.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/core/StandardServer.java" />
-        <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java" />
         <option value="$PROJECT_DIR$/java/org/apache/tomcat/util/digester/Digester.java" />
         <option value="$PROJECT_DIR$/java/org/apache/catalina/connector/Connector.java" />
         <option value="$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java" />
         <option value="$PROJECT_DIR$/java/org/apache/tomcat/util/net/JIoEndpoint.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/core/StandardContext.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/session/StandardManager.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/tomcat/util/http/Cookies.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/tomcat/util/net/NioEndpoint.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/connector/CoyoteAdapter.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/connector/Request.java" />
+        <option value="$PROJECT_DIR$/java/org/apache/catalina/session/StandardSession.java" />
       </list>
     </option>
   </component>
@@ -208,8 +212,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-9" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -236,7 +239,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -380,7 +383,18 @@
       <workItem from="1530703696766" duration="2729000" />
       <workItem from="1530755139727" duration="9662000" />
       <workItem from="1530773953103" duration="6037000" />
-      <workItem from="1530782319777" duration="7305000" />
+      <workItem from="1530782319777" duration="10904000" />
+      <workItem from="1530844864747" duration="7993000" />
+      <workItem from="1530862618307" duration="641000" />
+      <workItem from="1530863684286" duration="9234000" />
+      <workItem from="1531100510189" duration="59000" />
+      <workItem from="1531101075155" duration="43000" />
+      <workItem from="1531293750295" duration="10704000" />
+      <workItem from="1531382633359" duration="23609000" />
+      <workItem from="1531474032545" duration="605000" />
+      <workItem from="1531477238658" duration="2085000" />
+      <workItem from="1531534977698" duration="1991000" />
+      <workItem from="1531881279900" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="注释掉testCookieFilter">
       <created>1529057693400</created>
@@ -431,15 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1530627834654</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="注释">
+      <created>1530792835780</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1530792835780</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114595000" />
+    <option name="totallyTimeSpent" value="175163000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -449,26 +469,26 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18913044" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07608695" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15991472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22014925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3347826" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15869565" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,23 +518,23 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/org.apache.catalina.Service">
+    <entry file="uml://JAVA/org.apache.coyote.AbstractProtocol.AbstractConnectionHandler">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>JAVA</ID>
-          <OriginalElement>org.apache.catalina.Service</OriginalElement>
+          <OriginalElement>org.apache.coyote.AbstractProtocol.AbstractConnectionHandler</OriginalElement>
           <nodes>
-            <node x="" y="">org.apache.catalina.Lifecycle</node>
-            <node x="" y="">org.apache.catalina.Service</node>
+            <node x="" y="">org.apache.coyote.AbstractProtocol.AbstractConnectionHandler</node>
+            <node x="" y="">org.apache.tomcat.util.net.AbstractEndpoint.Handler</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="48.0" y="55.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="104.0" y="55.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -522,392 +542,365 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/deploy/NamingResources.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/AprEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="960" column="26" lean-forward="false" selection-start-line="960" selection-start-column="8" selection-end-line="960" selection-end-column="26" />
+        <state relative-caret-position="1200">
+          <caret line="2434" column="35" lean-forward="true" selection-start-line="2434" selection-start-column="35" selection-end-line="2434" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/ApplicationFilterFactory.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/ProtocolHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="91" column="34" lean-forward="false" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
+        <state relative-caret-position="266">
+          <caret line="59" column="16" lean-forward="false" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardWrapperValve.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/JIoEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="201" column="48" lean-forward="false" selection-start-line="201" selection-start-column="40" selection-end-line="201" selection-end-column="48" />
+        <state relative-caret-position="460">
+          <caret line="53" column="43" lean-forward="false" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/ApplicationFilterChain.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/Http11AprProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="292" column="20" lean-forward="true" selection-start-line="292" selection-start-column="20" selection-end-line="292" selection-end-column="20" />
+        <state relative-caret-position="-9160">
+          <caret line="114" column="7" lean-forward="true" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardEngine.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/Http11AprProtocol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="299" column="22" lean-forward="false" selection-start-line="299" selection-start-column="22" selection-end-line="299" selection-end-column="22" />
+        <state relative-caret-position="246">
+          <caret line="254" column="23" lean-forward="false" selection-start-line="254" selection-start-column="23" selection-end-line="254" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardHost.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/Http11Protocol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="662" column="20" lean-forward="false" selection-start-line="662" selection-start-column="20" selection-end-line="662" selection-end-column="20" />
+        <state relative-caret-position="266">
+          <caret line="144" column="23" lean-forward="false" selection-start-line="144" selection-start-column="23" selection-end-line="144" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardService.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/Processor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="460" column="39" lean-forward="false" selection-start-line="460" selection-start-column="34" selection-end-line="460" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="392" column="13" lean-forward="false" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="1389" column="33" lean-forward="true" selection-start-line="1389" selection-start-column="33" selection-end-line="1389" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/server.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="86" column="76" lean-forward="false" selection-start-line="86" selection-start-column="62" selection-end-line="86" selection-end-column="76" />
+        <state relative-caret-position="408">
+          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/AbstractProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="138" column="25" lean-forward="false" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
+        <state relative-caret-position="3672">
+          <caret line="200" column="32" lean-forward="false" selection-start-line="200" selection-start-column="32" selection-end-line="200" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/Http11NioProtocol.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/RequestInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="64" column="40" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="3240">
+          <caret line="174" column="16" lean-forward="false" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/ajp/AjpNioProcessor.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/Adapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-926">
-          <caret line="145" column="13" lean-forward="true" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
+        <state relative-caret-position="752">
+          <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/AbstractHttp11Processor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="961" column="23" lean-forward="false" selection-start-line="961" selection-start-column="23" selection-end-line="961" selection-end-column="23" />
+        <state relative-caret-position="344">
+          <caret line="1607" column="44" lean-forward="true" selection-start-line="1607" selection-start-column="44" selection-end-line="1607" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/InternalNioInputBuffer.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/security/SecurityUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="208" column="19" lean-forward="false" selection-start-line="208" selection-start-column="19" selection-end-line="208" selection-end-column="19" />
+        <state relative-caret-position="9336">
+          <caret line="427" column="26" lean-forward="false" selection-start-line="427" selection-start-column="26" selection-end-line="427" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/AbstractInputBuffer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/security/AccessController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="272" column="16" lean-forward="false" selection-start-line="272" selection-start-column="16" selection-end-line="272" selection-end-column="16" />
+        <state relative-caret-position="243">
+          <caret line="526" column="8" lean-forward="false" selection-start-line="526" selection-start-column="8" selection-end-line="526" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/nio/ch/ServerSocketChannelImpl.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="59" column="24" lean-forward="false" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/nio/channels/ServerSocketChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="219" column="33" lean-forward="false" selection-start-line="219" selection-start-column="33" selection-end-line="219" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="698" column="29" lean-forward="false" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
+        <state relative-caret-position="243">
+          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/threads/LimitLatch.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/session/PersistentManagerBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="10560">
+          <caret line="486" column="19" lean-forward="false" selection-start-line="486" selection-start-column="19" selection-end-line="486" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3192">
+          <caret line="184" column="21" lean-forward="false" selection-start-line="184" selection-start-column="21" selection-end-line="184" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/session/StandardManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2351">
+          <caret line="189" column="19" lean-forward="false" selection-start-line="189" selection-start-column="19" selection-end-line="189" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/http/MimeHeaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="197" column="19" lean-forward="true" selection-start-line="197" selection-start-column="19" selection-end-line="197" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="354" column="19" lean-forward="false" selection-start-line="354" selection-start-column="19" selection-end-line="354" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/buf/MessageBytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="48" column="28" lean-forward="false" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/http/Cookies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="460" column="39" lean-forward="false" selection-start-line="460" selection-start-column="34" selection-end-line="460" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/AbstractProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="449" column="26" lean-forward="false" selection-start-line="449" selection-start-column="21" selection-end-line="449" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/connector/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="1014" column="33" lean-forward="false" selection-start-line="1014" selection-start-column="28" selection-end-line="1014" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="678" column="25" lean-forward="false" selection-start-line="678" selection-start-column="25" selection-end-line="678" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/NioEndpoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="557" column="25" lean-forward="false" selection-start-line="557" selection-start-column="25" selection-end-line="557" selection-end-column="25" />
+        <state relative-caret-position="1224">
+          <caret line="832" column="21" lean-forward="true" selection-start-line="832" selection-start-column="21" selection-end-line="832" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Service.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/ContainerBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25464">
-          <caret line="1116" column="0" lean-forward="false" selection-start-line="1116" selection-start-column="0" selection-end-line="1116" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2256">
-          <caret line="111" column="16" lean-forward="false" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/logging/LogManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1162">
-          <caret line="144" column="13" lean-forward="false" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/ExceptionUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/res/StringManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="114" column="18" lean-forward="false" selection-start-line="114" selection-start-column="18" selection-end-line="114" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/management/MBeanRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleMBeanBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="483" column="18" lean-forward="false" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/org/xml/sax/XMLReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="398" column="16" lean-forward="false" selection-start-line="398" selection-start-column="16" selection-end-line="398" selection-end-column="16" />
+        <state relative-caret-position="269">
+          <caret line="798" column="25" lean-forward="false" selection-start-line="798" selection-start-column="20" selection-end-line="798" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16608">
-          <caret line="750" column="19" lean-forward="false" selection-start-line="750" selection-start-column="19" selection-end-line="750" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/LifecycleException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="48" column="11" lean-forward="false" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-          <folding>
-            <element signature="e#1619#1620#0" expanded="true" />
-            <element signature="e#1649#1650#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="241">
+          <caret line="417" column="64" lean-forward="true" selection-start-line="417" selection-start-column="64" selection-end-line="417" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Bootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10368">
-          <caret line="461" column="88" lean-forward="false" selection-start-line="461" selection-start-column="49" selection-end-line="461" selection-end-column="88" />
+        <state relative-caret-position="509">
+          <caret line="474" column="34" lean-forward="true" selection-start-line="474" selection-start-column="34" selection-end-line="474" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Lifecycle.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/connector/CoyoteAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4680">
-          <caret line="210" column="16" lean-forward="false" selection-start-line="210" selection-start-column="16" selection-end-line="210" selection-end-column="16" />
+        <state relative-caret-position="412">
+          <caret line="816" column="56" lean-forward="true" selection-start-line="816" selection-start-column="56" selection-end-line="816" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/connector/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="3098" column="34" lean-forward="false" selection-start-line="3098" selection-start-column="34" selection-end-line="3098" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/security/provider/SecureRandom.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="89" column="37" lean-forward="false" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="198" column="6" lean-forward="false" selection-start-line="198" selection-start-column="6" selection-end-line="198" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/ext/sunpkcs11.jar!/sun/security/pkcs11/P11SecureRandom.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/ext/sunmscapi.jar!/sun/security/mscapi/PRNG.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/security/SecureRandomSpi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="62" column="28" lean-forward="false" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/StandardSessionIdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/SessionIdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/SessionIdGeneratorBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="169" column="19" lean-forward="false" selection-start-line="169" selection-start-column="19" selection-end-line="169" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/security/SecureRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="467" column="31" lean-forward="false" selection-start-line="467" selection-start-column="31" selection-end-line="467" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6984">
+          <caret line="307" column="7" lean-forward="false" selection-start-line="307" selection-start-column="7" selection-end-line="307" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/StandardContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128832">
+          <caret line="5654" column="24" lean-forward="false" selection-start-line="5654" selection-start-column="24" selection-end-line="5654" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/management/MBeanRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2016">
-          <caret line="114" column="28" lean-forward="false" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
+        <state relative-caret-position="288">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/AbstractHttp11Protocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/AbstractHttp11JsseProtocol.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/util/LifecycleMBeanBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/ConnectorCreateRule.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/core/ContainerBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="61" column="34" lean-forward="false" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state relative-caret-position="34080">
+          <caret line="1477" column="20" lean-forward="false" selection-start-line="1477" selection-start-column="20" selection-end-line="1477" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/digester/Digester.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/Session.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="1295" column="36" lean-forward="false" selection-start-line="1295" selection-start-column="31" selection-end-line="1295" selection-end-column="36" />
-          <folding>
-            <element signature="e#6119#6134#0" expanded="true" />
-            <element signature="e#6651#6663#0" expanded="true" />
-            <element signature="e#7462#7477#0" expanded="true" />
-            <element signature="e#8649#8676#0" expanded="true" />
-            <element signature="e#8847#8855#0" expanded="true" />
-            <element signature="e#9793#9801#0" expanded="true" />
-            <element signature="e#10932#10959#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/startup/Catalina.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="649" column="25" lean-forward="false" selection-start-line="649" selection-start-column="24" selection-end-line="649" selection-end-column="28" />
+        <state relative-caret-position="5664">
+          <caret line="254" column="19" lean-forward="false" selection-start-line="254" selection-start-column="19" selection-end-line="254" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/ProtocolHandler.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/session/StandardSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        <state relative-caret-position="14160">
+          <caret line="662" column="8" lean-forward="false" selection-start-line="662" selection-start-column="8" selection-end-line="662" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/connector/Connector.java">
+    <entry file="file://$PROJECT_DIR$/java/org/apache/catalina/session/ManagerBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="1025" column="0" lean-forward="true" selection-start-line="1025" selection-start-column="0" selection-end-line="1025" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/ServerSocketFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/DefaultServerSocketFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/SSLImplementation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/http11/Http11Protocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="21" />
-          <folding>
-            <element signature="e#3796#3797#0" expanded="true" />
-            <element signature="e#3838#3839#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/coyote/AbstractProtocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="434" column="24" lean-forward="false" selection-start-line="434" selection-start-column="24" selection-end-line="434" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/AbstractEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="641" column="25" lean-forward="false" selection-start-line="641" selection-start-column="25" selection-end-line="641" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/org/apache/tomcat/util/net/JIoEndpoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="379" column="17" lean-forward="false" selection-start-line="379" selection-start-column="17" selection-end-line="379" selection-end-column="17" />
+        <state relative-caret-position="696">
+          <caret line="694" column="13" lean-forward="false" selection-start-line="694" selection-start-column="13" selection-end-line="694" selection-end-column="13" />
           <folding />
         </state>
       </provider>

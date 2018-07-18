@@ -645,6 +645,7 @@ public class StandardSession implements HttpSession, Session, Serializable {
                 timeIdle = (int) ((timeNow - thisAccessedTime) / 1000L);
             }
             if (timeIdle >= maxInactiveInterval) {
+                // 主要是将StandardSession中的各种属性设为false，并且从manager里面删除，触发相应的监听事件
                 expire(true);
             }
         }
